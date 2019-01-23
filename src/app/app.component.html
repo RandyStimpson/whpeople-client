@@ -1,0 +1,16 @@
+<div id="app-container">
+  <div>
+      <button *ngIf="!isSignedIn" class="link-button" (click)="onSignInClick()">Sign In</button>
+      <button *ngIf="isSignedIn" class="link-button" (click)="onSignOutClick()">Sign Out</button>
+      <span id="menu-seperator">|</span>
+      <button class="link-button" routerLink="/login" rounterLinkActive="active">Tell Us What You Think</button>
+      <div class="clear"></div>
+  </div>
+  <div id="menu-bar">
+    <app-menu-bar></app-menu-bar>
+  </div>
+  <div class="menu-border"></div>
+  <div class="page">
+    <router-outlet></router-outlet>
+  </div>
+</div>

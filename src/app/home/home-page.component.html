@@ -1,0 +1,7 @@
+<model-dialog (animationComplete)="showNextDialog()">
+        <signin-dialog *ngIf="openDialog=='signin'" (signUp)="signUp()" (forgotPassword)="forgotPassword()"></signin-dialog>
+        <signup-dialog *ngIf="openDialog=='signup'" (backToSignIn)="backToSignIn()"></signup-dialog>
+        <forgot-password-dialog *ngIf="openDialog=='forgotpassword'" (backToSignIn)="backToSignIn()"></forgot-password-dialog>
+</model-dialog>
+
+<input type="checkbox"> Check me if you can

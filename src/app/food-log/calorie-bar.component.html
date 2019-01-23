@@ -1,0 +1,7 @@
+<div [style.height.px]="height" [style.width.px]="width">
+  <div class="calorie-bar-section saturated-fat-color" [style.width.%]="model.percentSatFat"></div>
+  <div class="calorie-bar-section unsaturated-fat-color" [style.width.%]="model.percentUnsatFat"></div>
+  <div class="calorie-bar-section protein-color" [style.width.%]="model.percentProtein"></div>
+  <div class="calorie-bar-section carbohydrate-not-sugar-color" [style.width.%]="model.percentNonSugarCarb"></div>
+  <div class="calorie-bar-section sugar-color" [style.width.%]=model.percentSugar></div>
+</div>

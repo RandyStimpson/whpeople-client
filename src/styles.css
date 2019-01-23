@@ -1,0 +1,118 @@
+* { padding: 0; margin: 0; }
+
+.saturated-fat-color {
+  background-color: #56082B;
+  background-color: #DC0062;
+}
+
+.unsaturated-fat-color {
+  background-color: #A83C6D;
+  background-color: #E85E9C;
+}
+
+.protein-color {
+  background-color: #260D9F;
+  background-color: #5230FF;
+}
+
+.carbohydrate-not-sugar-color {
+  background-color: #486B15;
+  background-color: #72BB12;
+}
+
+.sugar-color {
+  background-color: #647F3B;
+  background-color: #A2D262;
+}
+
+.dialog-header
+{
+    font-size: 18px;
+}
+
+.button-right
+{
+  float: right;
+  margin-left: 10px;
+}
+
+.button-left
+{
+  margin-right: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.app-dialog-button
+{
+  background: linear-gradient(#608848,#83A358);
+  color: white;
+  padding: 7px 15px 7px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.app-dialog-button:hover
+{
+  background: none;
+  background-color: #608848;
+}
+
+.app-dialog-button:active
+{
+  box-shadow: 2px 2px 7px grey;
+}
+.app-dialog-button:focus
+{
+  background: none;
+  background-color: #608848;
+  outline: 0;
+}
+
+.dialog-input
+{
+  border-radius: 3px;
+  border: solid 1px #608848;
+}
+
+.purple-link-button
+{
+  color: #5c2e83;
+  border: none;
+  background: none;
+  padding: 5px;
+}
+
+.purple-link-button:hover, .purple-link-button:focus
+{
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.purple-link-button:focus
+{
+  outline: 0;
+}
+
+.popup-dialog-message, .popup-error-message
+{
+  background-color: white;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.popup-dialog-message
+{
+  border: 1px solid #427F1D;
+  color: #427F1D;
+}
+
+.popup-error-message
+{
+  color: #7F0000;
+}
+
