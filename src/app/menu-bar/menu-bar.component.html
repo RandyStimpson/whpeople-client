@@ -1,0 +1,7 @@
+<div *ngFor='let name of menuNames'>
+    <div class="menu-button-container">
+        <menu-button menuname="{{name}}" [active]="name==selectedMenu"></menu-button>
+    </div>  
+</div>
+
+

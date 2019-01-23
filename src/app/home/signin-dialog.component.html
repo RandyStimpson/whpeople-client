@@ -1,0 +1,19 @@
+<div class="dialog-header">Sign In</div>
+<div id="dialog-field-content">
+  <div class="label-input-pair">
+      <div>Username or email address</div>
+      <input [(ngModel)]="username" class="dialog-input" type="text" (keypress)="onKeyPress()">    
+  </div>
+  <div class="label-input-pair">
+      <div>Password</div>
+      <input [(ngModel)]="password" class="dialog-input" type="text" (keypress)="onKeyPress()">    
+  </div>
+  <button class="purple-link-button" (click)="onForgotPasswordClick()">I forgot my username or password</button>
+  <div *ngIf="message" class="popup-dialog-message">{{message}}</div>
+  <div *ngIf="errorMessage" class="popup-error-message">{{errorMessage}}</div>
+  <div id="not-member">Not a member?</div>
+</div>
+<dialog-button-footer>
+    <button class="app-dialog-button" (click)="onSignUpClick()">Free Sign Up</button>
+    <button class="app-dialog-button button-right" (click)="onSignInClick()">Sign In</button>
+</dialog-button-footer>

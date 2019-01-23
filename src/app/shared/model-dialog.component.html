@@ -1,0 +1,10 @@
+<div class="dialog-wrapper" *ngIf="showDialog">
+  <div class="dialog-body" [@dialogState]="dialogState" (@dialogState.done)="onAnimationComplete()">
+    <img class="close-dialog-icon" src="/assets/images/close-dialog-icon.png" (click)="onCloseIconClick()">
+    <div class="drag-bar"></div>
+    <div class="dialog-content-container">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
+<div *ngIf="showDialog" class="model-exterior" [@exteriorState]="exteriorState" (@exteriorState.done)="onExteriorAnimationComplete($event)"></div>

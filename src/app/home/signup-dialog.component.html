@@ -1,0 +1,21 @@
+<div class="dialog-header">Sign Up</div>
+<div id="dialog-field-content">
+  <div class="label-input-pair">
+      <div>Email Address</div>
+      <input class="dialog-input" type="text" (keypress)="onKeyPress()">    
+  </div>
+  <div class="label-input-pair">
+      <div>Password</div>
+      <input class="dialog-input" type="text" (keypress)="onKeyPress()">    
+  </div>
+  <div class="label-input-pair">
+      <div>Retype Password</div>
+      <input class="dialog-input" type="text" (keypress)="onKeyPress()">    
+  </div>
+  <div *ngIf="message" class="popup-dialog-message">{{message}}</div>
+  <div *ngIf="errorMessage" class="popup-error-message">{{errorMessage}}</div>
+</div>
+<dialog-button-footer>
+    <button class="purple-link-button" (click)="onBackToSignInClick()">Back to Sign In</button>
+    <button class="app-dialog-button button-right" (click)="signInClick()">Sign Up</button>
+</dialog-button-footer>

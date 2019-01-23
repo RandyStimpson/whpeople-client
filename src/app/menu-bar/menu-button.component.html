@@ -1,0 +1,6 @@
+<div class="menu-button-container">
+  <div [class]="active ? 'menu-button-active' : 'menu-button-inactive'" (click)="onClick()">{{menuname}}</div>
+  <div class="image-container">
+    <img *ngIf="active" class="image-top-center" src="./assets/images/top-nav-arrow-indicator.png">
+  </div>
+</div>

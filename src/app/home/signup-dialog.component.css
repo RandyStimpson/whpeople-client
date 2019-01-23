@@ -1,0 +1,20 @@
+#dialog-field-content
+{
+    padding: 20px 0px;
+    width: 300px;
+}
+
+#signup-button 
+{
+    float: right;
+}
+
+input
+{
+    width: 100%;
+}
+
+.label-input-pair
+{
+    margin-bottom: 15px;
+}
