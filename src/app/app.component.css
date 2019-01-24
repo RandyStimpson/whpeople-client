@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #app-container {
   max-width: 1024px;
   margin-left: auto;
@@ -40,3 +41,47 @@
   height: 35px;
   margin-right: 10px;
 }
+=======
+#app-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#menu-seperator {
+  font-size: 16px;
+  float: right;
+}
+
+.link-button {
+  font-size: 16px;
+  margin: 2px;
+  border: none;
+  background: none;
+  float: right;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.page {
+  margin: 0px 10px 0px 10px;
+  border: 3px aquamarine solid;
+  flex-grow:1;
+}
+
+.menu-border {
+  background: linear-gradient(#492D60, #6D3E94);
+  height: 25px;
+  border-bottom: #492D60 solid 1px;
+}
+
+#menu-bar {
+  height: 35px;
+  margin-right: 10px;
+}
+>>>>>>> 7567f775f7a54dd631a87c7a1a5b863889ae0687

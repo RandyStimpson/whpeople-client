@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #dialog-field-content
 {
     padding: 20px 0px;
@@ -17,4 +18,25 @@ input
 .label-input-pair
 {
     margin-bottom: 15px;
+=======
+#dialog-field-content
+{
+    padding: 20px 0px;
+    width: 300px;
+}
+
+#signup-button 
+{
+    float: right;
+}
+
+input
+{
+    width: 100%;
+}
+
+.label-input-pair
+{
+    margin-bottom: 15px;
+>>>>>>> 7567f775f7a54dd631a87c7a1a5b863889ae0687
 }

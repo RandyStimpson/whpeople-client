@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .model-exterior
 {
     position: absolute;
@@ -54,3 +55,61 @@
     cursor: pointer;
 }
 
+=======
+.model-exterior
+{
+    position: absolute;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: .4;
+    background-color: black;
+}
+
+.dialog-wrapper
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 13px;
+    perspective: 800;
+    z-index: 10;
+}
+
+.dialog-body
+{
+    position: relative;
+    background-color: #E0F3C6;
+    display: inline-block;
+    transform-style: preserve-3d;
+}
+
+
+.drag-bar
+{
+    background-color: #AED081;
+    height: 10px;
+}
+
+
+.dialog-content-container
+{
+    padding: 10px 15px 15px 15px;
+}
+ 
+.close-dialog-icon
+{
+    position: absolute;
+    top: -8px;
+    right: -12px;
+}
+
+.close-dialog-icon:hover
+{
+    cursor: pointer;
+}
+
+>>>>>>> 7567f775f7a54dd631a87c7a1a5b863889ae0687
