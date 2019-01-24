@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .menu-button-container
 {
     position: relative;
@@ -35,41 +34,3 @@
     margin-left: -8px;
 }
 
-=======
-.menu-button-container
-{
-    position: relative;
-    margin-right: 1px;
-}
-
-.menu-button-inactive
-{
-    background: linear-gradient(#608848,#83A358);
-    height: 33px;
-    color: white;
-    padding: 7px 15px 0px 15px;
-    margin: 0px auto 0px auto
-}
-
-.menu-button-active
-{
-    background: linear-gradient(#ADCF80 0%,#ADCF80 15%,#C1E78F 15%, #C1E78F 100%);
-    height: 33px;
-    color: black;
-    padding: 7px 15px 0px 15px;
-    margin: 0px auto 0px auto;
-}
-
-.image-container
-{
-    background-color: rebeccapurple;
-}
-
-.image-top-center
-{
-    position: absolute;
-    left: 50%;
-    margin-left: -8px;
-}
-
->>>>>>> 7567f775f7a54dd631a87c7a1a5b863889ae0687
