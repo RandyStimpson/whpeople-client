@@ -39,4 +39,10 @@
 #menu-bar {
   height: 35px;
   margin-right: 10px;
+  margin-left: 10px;
+}
+
+#logo-img
+{
+  position: absolute;
 }
