@@ -10,6 +10,8 @@ export class FoodLogComponent implements OnInit {
 
   constructor() { }
 
+  expandedState: boolean = true;
+
   ngOnInit() {
   }
 
@@ -26,5 +28,11 @@ export class FoodLogComponent implements OnInit {
   }
 
   updateCount=0;
+
+  expandCollapseClick()
+  {
+    this.expandedState = !this.expandedState;
+    console.log("expand collapse "+ this.expandedState);
+  }
 
 }

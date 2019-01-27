@@ -7,6 +7,9 @@
   flex-direction: column;
 }
 
+#top{
+  margin: 0px 10px;
+}
 #menu-seperator {
   font-size: 16px;
   float: right;
@@ -26,7 +29,7 @@
 
 .page {
   margin: 0px 10px 0px 10px;
-  border: 3px aquamarine solid;
+  border: 1px solid gray;
   flex-grow:1;
 }
 
