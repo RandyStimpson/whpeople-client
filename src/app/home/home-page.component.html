@@ -1,5 +1,5 @@
-<model-dialog (animationComplete)="showNextDialog()">
+<modal-dialog (animationComplete)="showNextDialog()">
         <signin-dialog *ngIf="openDialog=='signin'" (signUp)="signUp()" (forgotPassword)="forgotPassword()"></signin-dialog>
         <signup-dialog *ngIf="openDialog=='signup'" (backToSignIn)="backToSignIn()"></signup-dialog>
         <forgot-password-dialog *ngIf="openDialog=='forgotpassword'" (backToSignIn)="backToSignIn()"></forgot-password-dialog>
-</model-dialog>
+</modal-dialog>

@@ -2,9 +2,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { trigger, transition, state, animate, style } from '@angular/animations';
 
 @Component({
-  selector: 'model-dialog',
-  templateUrl: './model-dialog.component.html',
-  styleUrls: ['./model-dialog.component.css'],
+  selector: 'modal-dialog',
+  templateUrl: './modal-dialog.component.html',
+  styleUrls: ['./modal-dialog.component.css'],
   animations: [
     trigger('dialogState', [
       state('open', style({
@@ -26,7 +26,7 @@ import { trigger, transition, state, animate, style } from '@angular/animations'
     ])
   ]
 })
-export class ModelDialogComponent implements OnInit {
+export class ModalDialogComponent implements OnInit {
 
   showDialog: boolean = true;
   dialogState: string = "open"; //open, closed, spinclosed spinopen

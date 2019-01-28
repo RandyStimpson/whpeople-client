@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild} from '@angular/core';
-import { ModelDialogComponent} from '../shared/model-dialog.component';
-import { modelGroupProvider } from '@angular/forms/src/directives/ng_model_group';
+import { ModalDialogComponent} from '../shared/modal-dialog.component';
 
 @Component({
   selector: 'home-page',
@@ -9,7 +8,7 @@ import { modelGroupProvider } from '@angular/forms/src/directives/ng_model_group
 })
 export class HomePageComponent implements OnInit {
 
-  @ViewChild(ModelDialogComponent) private model : ModelDialogComponent;
+  @ViewChild(ModalDialogComponent) private modal : ModalDialogComponent;
   openDialog: string = "signin";
   nextDialog: string;
   constructor() { }
@@ -22,18 +21,18 @@ export class HomePageComponent implements OnInit {
   }
 
   backToSignIn(){
-    this.model.rotateDialog();
+    this.modal.rotateDialog();
     this.nextDialog = "signin";
   }
 
   forgotPassword() {
-    this.model.rotateDialog();
+    this.modal.rotateDialog();
     this.nextDialog = "forgotpassword";
   }
 
   signUp() {
     this.nextDialog = "signup";
-    this.model.rotateDialog();
+    this.modal.rotateDialog();
   }
 
   showNextDialog()
@@ -42,7 +41,7 @@ export class HomePageComponent implements OnInit {
     if (this.nextDialog !== undefined) {
       this.openDialog = this.nextDialog;
       this.nextDialog = undefined;
-      this.model.rotateDialog();  
+      this.modal.rotateDialog();  
     }
   }
 }
