@@ -14,12 +14,6 @@
   flex-grow: 1;
 }
 
-#calendar-container {
-  background-color: rgb(173, 162, 147);
-  height: 41px;
-  width: 240px;
-}
-
 #buttons-container {
   height: 42px;
 }
@@ -91,4 +85,11 @@
 .expand-img:hover
 {
     cursor: pointer;
+}
+
+#calendar-widget-container
+{
+    width: 240px;
+    height: 42px;
+    padding-top: 9px;
 }

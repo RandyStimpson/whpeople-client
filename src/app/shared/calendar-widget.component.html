@@ -1,0 +1,9 @@
+<div id="calendar-widget">
+    <img class="calendar" *ngIf="dateString=='Today'" src="../../assets/images/Calendarblue.png" (click)="showCalendar()">
+    <img class="calendar" *ngIf="dateString!='Today'" src="../../assets/images/Calendarorange.png" (click)="showCalendar()">
+    <img class="calendar-arrow-left" src="../../assets/images/CalendarArrowLeft.png" (click)="prevDate()">
+    <img class="calendar-arrow-right" src="../../assets/images/CalendarArrowRight.png" (click)="nextDate()">
+    <div id="date-container">
+      {{ dateString }}
+  </div>
+</div>

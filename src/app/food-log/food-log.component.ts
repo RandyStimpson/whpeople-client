@@ -35,4 +35,9 @@ export class FoodLogComponent implements OnInit {
     console.log("expand collapse "+ this.expandedState);
   }
 
+  onDateChanged(date)
+  {
+    console.log("Date Changed: " + date);
+  }
+
 }

@@ -1,19 +1,20 @@
-
 <div id="outer">
   <div id="left-side">
-      <div id="calendar-container"></div>
+    <div id="calendar-widget-container">
+      <calendar-widget (dateChanged)="onDateChanged($event)"></calendar-widget>
+    </div>
   </div>
   <div id="right-side">
-      <div id="buttons-container">
-        <div id="search">
-            <input  type="text"><img src="../../assets/images/search.png">
-        </div>
-        <img class="expand-img" *ngIf="!expandedState" src="../../assets/images/ExpandFoodLog.png" (click)="expandCollapseClick()">
-        <img class="expand-img" *ngIf="expandedState" src="../../assets/images/CollapseFoodLog.png" (click)="expandCollapseClick()">
-        <div class="button-img"><button>Packaged Food</button><img src="../../assets/images/AddFood.png"></div>
-          <div class="button-img"><button>Favorites</button><img src="../../assets/images/FavoritesStar.png"></div>
-          <div class="button-img"><button>Group</button><img src="../../assets/images/GroupFoods.png"></div>
-        </div>
-      <calorie-bar [model]="calorieBarSettings" [changeCount]="updateCount"></calorie-bar>
+    <div id="buttons-container">
+      <div id="search">
+        <input type="text"><img src="../../assets/images/search.png">
+      </div>
+      <img class="expand-img" *ngIf="!expandedState" src="../../assets/images/ExpandFoodLog.png" (click)="expandCollapseClick()">
+      <img class="expand-img" *ngIf="expandedState" src="../../assets/images/CollapseFoodLog.png" (click)="expandCollapseClick()">
+      <div class="button-img"><button>Packaged Food</button><img src="../../assets/images/AddFood.png"></div>
+      <div class="button-img"><button>Favorites</button><img src="../../assets/images/FavoritesStar.png"></div>
+      <div class="button-img"><button>Group</button><img src="../../assets/images/GroupFoods.png"></div>
     </div>
+    <calorie-bar [model]="calorieBarSettings" [changeCount]="updateCount"></calorie-bar>
+  </div>
 </div>

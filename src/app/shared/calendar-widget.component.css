@@ -1,0 +1,41 @@
+#calendar-widget {
+  position: relative;
+  border: 1px solid #c6c6c6;
+  font-weight: bold;
+  background-image: linear-gradient(#FEFEFE 20%, #C6C6C6 80%, #C6C6C6);
+  height: 24px;
+}
+
+#date-container {
+  padding-top: 3px;
+  margin-left: 43px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.calendar {
+  position: absolute;
+  left: 22px;
+  top: -4px;
+  cursor: pointer;
+}
+
+.calendar-arrow-left {
+  position: absolute;
+  opacity: .8;
+  left: 2px;
+  top: 1px;
+}
+
+.calendar-arrow-right {
+    position: absolute;
+    opacity: .8;
+    right: 2px;
+    top: 1px;
+  }
+
+  .calendar-arrow-left:hover, .calendar-arrow-right:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+    

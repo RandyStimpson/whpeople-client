@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { ModelDialogComponent } from './model-dialog.component';
 import { DialogButtonFooterComponent } from './dialog-button-footer.component';
 import { DialogButtonDirective } from './dialog-button.directive';
+import { CalendarWidgetComponent } from './calendar-widget.component';
 
 @NgModule({
   declarations: [
     ModelDialogComponent,
     DialogButtonFooterComponent,
+    CalendarWidgetComponent,
     DialogButtonDirective,
   ],
   imports: [
@@ -17,6 +19,7 @@ import { DialogButtonDirective } from './dialog-button.directive';
   exports: [
     ModelDialogComponent,
     DialogButtonFooterComponent,
+    CalendarWidgetComponent,
     DialogButtonDirective,
   ]
 })
